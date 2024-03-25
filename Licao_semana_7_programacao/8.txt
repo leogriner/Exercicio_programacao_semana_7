@@ -1,0 +1,35 @@
+class FormaGeometrica(){
+    Construtor (cor){
+        this.cor = cor;
+    }
+}
+
+
+class Circulo extends FormaGeometrica{
+    Construtor(cor, raio){
+        super(cor)
+        this.raio = raio;
+    }
+
+
+    metodo calcularArea Circulo{
+        console.log(pi*r**2)
+    }
+}
+
+class Retangulo extends FormaGeometrica{
+    Construtor(cor, largura, altura){
+        super (cor)
+        this.largura = largura
+        this.altura = altura
+  }
+
+
+    metodo calcularArea Retangulo{
+        console.log(largura*altura)
+    }
+}
+
+let retangulo = new Retangulo("vermelho", 10, 20)
+
+retangulo.CalcularArea()

@@ -1,0 +1,14 @@
+Função calcularTempoParaCorrida(distancia, velocidadeInicial, aceleracao, velocidadeMaxima, tempoMaximo):
+    tempo = 0
+    velocidade = velocidadeInicial
+    
+    Enquanto distancia > 0 e tempo <= tempoMaximo:
+        velocidade = min(velocidade + aceleracao, velocidadeMaxima)
+        distanciaPercorrida = velocidade * intervaloDeTempo
+        tempo = tempo + intervaloDeTempo
+        distancia = distancia - distanciaPercorrida
+    
+    Se distancia <= 0:
+        Retorne tempo
+    Senão:
+        Retorne "A corrida não foi concluída no tempo máximo"

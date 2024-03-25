@@ -1,0 +1,15 @@
+let idade = prompt("Qual a sua idade?")
+
+if (idade < 16){
+return ("nao pode votar")
+}
+
+else {
+    if (idade > 18){
+    return ("voto facultativo")
+    }
+
+else {
+    return ("voto obrigatorio")
+    }
+}
